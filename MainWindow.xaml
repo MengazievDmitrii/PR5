@@ -1,0 +1,23 @@
+﻿<Window x:Class="ПР5.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ПР5"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="515" Width="831">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="4*"/>
+            <ColumnDefinition Width="273*"/>
+        </Grid.ColumnDefinitions>
+        <TextBlock Text="Введите данные:" Margin="10,10,-10,368" FontSize="16" FontFamily="Times New Roman" Grid.ColumnSpan="2" ></TextBlock>
+        <TextBox Name="tb1" Margin="0,41,409,415" Grid.Column="1" />
+        <TextBlock Text="Что вы хотите сделать?" Margin="10,102,92,351" FontFamily="Times New Roman" FontSize="16" Grid.ColumnSpan="2" />
+        <Button Name="b1" Content="Добавить новую запись" Click="b1_Click_1" Margin="10,153,497,290" Grid.Column="1"/>
+        <Button Name="b2" Content="Изменить запись" Click="b2_click" Margin="10,224,497,234" Grid.Column="1"/>
+        <Button Name="b3" Content="Удалить запись" Click="b3_click" Margin="10,275,497,179" Grid.Column="1"/>
+
+        <ListBox Name="List1" Margin="77,350,69,10" Grid.Column="1"/>
+    </Grid>
+</Window>
